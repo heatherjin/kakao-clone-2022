@@ -1,0 +1,21 @@
+.nav {
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 0px;
+  /* 포지션 픽스 했더니 다 붙어서 나옴. 그래서 width를 100% 해줫더니 돌아옴 */
+  width: 100%;
+  /* 그랬더니 끝에 아이콘이 사라짐; 100%+패딩값 더해짐*/
+  /* 그래서 보더박스추가 , 패딩 넣더라도 박스사이즈 늘리지 말라고 명령하는것임*/
+  box-sizing: border-box;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  color: #2e363e;
+}

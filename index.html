@@ -33,9 +33,18 @@
       </p>
     </header>
 
-    <form id="login-form">
-      <input type="text" placeholder="Email or phone number" />
-      <input type="password" placeholder="Password" />
+    <!-- 
+    post는 서버가 있을경우  get은 서버가 없을경우 
+    get은 정보가 남기때문에 보안 필요한 부분에 쓰지 않음
+    보통 검색하고 이럴때만 씀 -->
+    <form id="login-form" action="friends.html" method="get">
+      <input
+        name="username"
+        required
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input name="password" required type="password" placeholder="Password" />
       <input type="submit" value="Log in" id="lg_submit" />
       <input type="button" value="Sign Up" id="lg_button" />
       <a href="#">Find Kakao Account or Password</a>

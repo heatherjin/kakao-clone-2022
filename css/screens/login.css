@@ -1,0 +1,64 @@
+.welcome-header {
+  /* 텍스만 들어가 있으니 디스플레이 플렉스 안하고 텍스트얼라인을 함 */
+  margin: 90px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+}
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.7;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login-form input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+#login-form input:not([type="submit"], [type="button"]) {
+  /* 이 것을 제외한 나머지에 적용하고싶어요 라는뜻, 서브밋, 버튼 빼고 나머지에 적용할 것들을 적는것임 */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+
+#login-form input[type="submit"],
+input[type="button"] {
+  cursor: pointer;
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  /* #login-form이 아빠임. 여기서 상속받은 색임. 블랙~ */
+  color: inherit;
+  font-size: 13px;
+}
