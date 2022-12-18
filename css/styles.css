@@ -11,12 +11,29 @@
 /*Components*/
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/icon-raw.css";
+@import "components/no-mobile.css";
+
 /* Screens */
 @import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/alte-screen-header.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
 
 /* 
 모든 화면에 동일하게 적용되는 속성은 바디에
 예를들면 폰트나 배경색 등 */
 body {
   font-family: "Open Sans", sans-serif;
+  color: #2e363e;
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }
