@@ -1,4 +1,4 @@
-#Kakao Clone 2022 Update
+## Kakao Clone 2023
 
-My first Project
-Update Test
+- My first Project
+- practiced implementing frontend screens using HTML and CSS
